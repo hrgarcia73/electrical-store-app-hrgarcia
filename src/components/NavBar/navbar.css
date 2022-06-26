@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-items a{
+    color: white;
+    font-family: "Mohave", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: 0.5s;
+    text-decoration: none;
+    margin: 5px;
+    position: relative;
+}
+
+.navbar .nav-items a:hover {
+    background-color: #f58634;
+    color: #fff;
+}
