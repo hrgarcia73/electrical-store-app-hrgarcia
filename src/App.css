@@ -12,11 +12,11 @@
   height: 65px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
+  align-items: center;
   border-bottom: solid #f58634 5px;
   position: fixed;
   top: 0;
-  /*font-size: calc(10px + 2vmin);*/
-  color: white;
+  color: white; 
 }
 
