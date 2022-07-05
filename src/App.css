@@ -12,6 +12,7 @@
   height: 65px;
   width: 100%;
   display: flex;
+  
   justify-content:flex-start;
   align-items: center;
   border-bottom: solid #f58634 5px;
