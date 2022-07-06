@@ -1,4 +1,5 @@
 .list{
+    align-items: center;
     position: relative;
     top:100px;
 }
