@@ -1,0 +1,9 @@
+.item-list{
+    display: grid;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
