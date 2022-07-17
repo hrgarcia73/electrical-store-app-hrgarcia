@@ -11,8 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo novaware" />
         <NavBar/>
       </header>
-      {/* <ItemListContainer greeting={"Soy el ItemListContainer"}/>  */}
-      <ItemDetailContainer />
+      <ItemListContainer greeting={"Soy el ItemListContainer"}/>
     </div>
   );
 }
