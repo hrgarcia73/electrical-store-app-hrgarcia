@@ -1,24 +1,4 @@
 .App {
   text-align: center; 
-
-}
-
-.App-logo {
-  height: 8vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #333333;
-  height: 65px;
-  width: 100%;
-  display: flex;
-  
-  justify-content:flex-start;
-  align-items: center;
-  border-bottom: solid #f58634 5px;
-  position: fixed;
-  top: 0;
-  color: white; 
 }
 

@@ -1,17 +1,19 @@
-import logo from '../src/img/logo-novaware.gif';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo novaware" />
+    <div className="App">  
+      <BrowserRouter>
         <NavBar/>
-      </header>
-      <ItemListContainer greeting={"Soy el ItemListContainer"}/>
+        <Routes>
+          <Route path='/' element= {<ItemListContainer greeting={"Soy el ItemListContainer"}/>} />
+        </Routes>
+      </BrowserRouter>    
+
     </div>
   );
 }

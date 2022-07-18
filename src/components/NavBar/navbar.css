@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
 
-.navbar{
+.navbar-container{
+   
+}
+.navbar-container .navbar{
+    display: flex;
     height: 60px;
     width: 100%;
-    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: #333333;
+    border-bottom: solid #f58634 5px;
     justify-content:space-around;
     align-items: center;
+    z-index: 999;
 }
+.navbar-container .App-logo {
+    height: 8vmin;
+    pointer-events: none;
+  }
 
-.nav-items{
+.navbar-container .navbar .nav-items{
     align-items: flex-start;
 }
 
-.navbar .nav-items a{
+.navbar-container .navbar .nav-items a{
     color: white;
     font-family: "Mohave", sans-serif;
     font-size: 1rem;
@@ -25,7 +37,19 @@
     position: relative;
 }
 
-.navbar .nav-items a:hover {
+.navbar-container .navbar .nav-items a:hover {
     background-color: #f58634;
     color: #fff;
+}
+
+.navbar-container .navbar .nav-items .active{
+    background-color: #f58634;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-container .navbar .search-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
