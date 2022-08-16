@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.navbar-container .navbar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #3ca2b2;
+    border-bottom: solid lightgray 5px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.navbar-container .navbar .logo{
+    font-family: "Roboto";
+    color: #333333;
+    font-size: 2rem;
+    font-weight:bold;
+    
+}
+.navbar-container .navbar ul li{
+    display: inline;    
+
+}
+
+
+.navbar-container .navbar ul li a{
+    text-decoration: none;
+    font-family: "Mohave", sans-serif;
+    font-size: 1.4rem;
+    color: #333333;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.navbar-container .navbar ul li a:hover {
+    background-color: #686876;
+    color: #fff;
+}
