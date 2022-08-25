@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave&display=swap");
+
+.itemcount-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.itemcount{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 30px;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.itemcount h3{
+    width: 150px;
+    color: lightseagreen;
+}
+
+.itemcount button{
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    color: lightseagreen;
+    font-family: "Mohave", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.itemcount button:hover{
+    background-color: lightseagreen;
+    color: white;
+    
+}
+
+.btn-agregar{
+    width: 200px;
+    height: 40px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    background-color: white;
+    color: lightseagreen;
+    font-family: "Mohave", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-agregar:hover{
+    background-color: lightseagreen;
+    color: white;
+}
