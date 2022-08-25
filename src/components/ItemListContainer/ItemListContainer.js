@@ -2,11 +2,11 @@
 import React, { useEffect, useState } from "react";
 import './ItemListContainer.css';
 
-const ItemListContainer = () =>{
+const ItemListContainer = ({mensaje}) =>{
 
   return (
     <div className='list'>
-      <p>Este es mi ItemListContainer</p>
+      <p>{mensaje}</p>
     </div>
   )
 }
