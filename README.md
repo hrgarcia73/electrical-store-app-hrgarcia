@@ -10,3 +10,5 @@ Creá tu landing. CartWidget, ItemListContainer
 Desafío 4:
 Contador con botón
 
+Desafío 5:
+Catálogo con MAPS y Promises

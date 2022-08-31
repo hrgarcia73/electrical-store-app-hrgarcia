@@ -25,6 +25,9 @@
 
 }
 
+.navbar-container .navbar{
+    z-index: 999;
+}
 
 .navbar-container .navbar ul li a{
     text-decoration: none;
