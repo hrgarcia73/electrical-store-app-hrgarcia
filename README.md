@@ -12,3 +12,6 @@ Contador con botón
 
 Desafío 5:
 Catálogo con MAPS y Promises
+
+Desafío 6:
+Detalle de producto
