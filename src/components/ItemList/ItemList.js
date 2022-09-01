@@ -12,12 +12,11 @@ export const ItemList = ({items}) => {
             codigo={codigo}
             descripcion={descripcion}
             precio= {precio} 
-            pictureUrl= {require(`../../data/img/${cadena}`)}  
+            pictureUrl={require(`../../data/img/${cadena}`)}  
             stock = {stock}
             key={id}
             />     
         ))} 
-
     </div>
   )
 }
