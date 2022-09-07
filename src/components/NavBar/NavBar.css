@@ -22,14 +22,13 @@
 }
 .navbar-container .navbar ul li{
     display: inline;    
-
 }
 
 .navbar-container .navbar{
     z-index: 999;
 }
 
-.navbar-container .navbar ul li a{
+.navbar-container .navbar .nav-items a{
     text-decoration: none;
     font-family: "Mohave", sans-serif;
     font-size: 1.4rem;
@@ -39,7 +38,13 @@
     transition: 0.5s;
 }
 
-.navbar-container .navbar ul li a:hover {
+.navbar-container .navbar .nav-items a:hover {
     background-color: #686876;
     color: #fff;
+}
+
+.navbar-container .navbar .nav-items .active{
+    background-color: #686876;
+    color: #fff;
+    font-weight: bold;
 }

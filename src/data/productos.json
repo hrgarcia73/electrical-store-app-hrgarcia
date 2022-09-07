@@ -82,5 +82,105 @@
         "imagen": "3SU1001-1HB20-0AA0.webp",
         "precio": 37,
         "stock": 152
+    },
+
+    {
+        "id": 8,
+        "categoria": "Automatización y comunicación",
+        "familia": "SITOP / LOGO! Power",
+        "subFamilia": "Fuentes de alimentación",
+        "sapId": 100103733,
+        "descripcion": "Fuente SITOP SMART, 340/550VAC / 24VDC, 20A",
+        "codigo": "6EP1436-2BA10",
+        "imagen": "6EP1436-2BA10.webp",
+        "precioUnitario": 450,
+        "stock": 21
+    },
+    {
+        "id": 9,
+        "categoria": "Automatización y comunicación",
+        "familia": "SITOP / LOGO! Power",
+        "subFamilia": "Fuentes de alimentación",
+        "sapId": 100017589,
+        "descripcion": "Fuente SITOP Modular, 3x400V-500VAC / 24VDC, 20A",
+        "codigo": "6EP1436-3BA00",
+        "imagen": "6EP1436-3BA00.webp",
+        "precioUnitario": 620,
+        "stock": 21
+    },
+
+    {
+        "id": 10,
+        "categoria": "Automatización y comunicación",
+        "familia": "SITOP / LOGO! Power",
+        "subFamilia": "Fuentes de alimentación",
+        "sapId": 100205153,
+        "descripcion": "SITOP PSU300S 40A FUENTE ALIMENTACION ESTABILIZ. ENTRADA: 3 AC 400-500 V SALIDA: DC 24 V/40 A",
+        "codigo": "6EP1437-2BA20",
+        "imagen": "6EP1437-2BA20.webp",
+        "precioUnitario": 720,
+        "stock": 21
+    },
+    {
+        "id": 11,
+        "categoria": "Automatización y comunicación",
+        "familia": "SITOP / LOGO! Power",
+        "subFamilia": "Fuentes de alimentación",
+        "sapId": 100017592,
+        "descripcion": "Fuente SITOP Modular, 3x400V-500VAC / 24VDC, 40A",
+        "codigo": "6EP1437-3BA00",
+        "imagen": "6EP1437-3BA00.webp",
+        "precioUnitario": 940,
+        "stock": 21
+    },
+    {
+        "id": 12,
+        "categoria": "Automatización y comunicación",
+        "familia": "SITOP / LOGO! Power",
+        "subFamilia": "Fuentes de alimentación",
+        "sapId": 0,
+        "descripcion": "SITOP PSU8200 24V 40A FUENTE ALIMENTACION ESTABILIZ. ENTRADA: 3 AC 400-500 V SALIDA: DC 24 V/40 A",
+        "codigo": "6EP1437-3BA10",
+        "imagen": "6EP1437-3BA10.webp",
+        "precioUnitario": 690,
+        "stock": 21
+    },
+
+    {
+        "id": 13,
+        "categoria": "Motores y accionamientos",
+        "familia": "SIMOTION",
+        "subFamilia": "Controladores",
+        "sapId": 100349202,
+        "descripcion": "Simotion Compact Flash Card D410-2",
+        "codigo": "6AU1400-1PA23-0AA0",
+        "imagen": "6AU1400-1PA23-0AA0.webp",
+        "precioUnitario": 461,
+        "stock": 2
+    },
+    {
+        "id": 14,
+        "categoria": "Motores y accionamientos",
+        "familia": "SIMOTION",
+        "subFamilia": "Controladores",
+        "sapId": 100349203,
+        "descripcion": "Simotion Compact Flash Card D4x5-2 ",
+        "codigo": "6AU1400-2PA23-0AA0",
+        "imagen": "6AU1400-2PA23-0AA0.webp",
+        "precioUnitario": 461,
+        "stock": 6
+    },
+
+    {
+        "id": 15,
+        "categoria": "Informática IOT",
+        "familia": "IOT Industrial",
+        "subFamilia": "Elementos de redes",
+        "sapId": 100017439,
+        "descripcion": "ACOPLADOR PROFIBUS DP/PA COUPLER (AMB EX)",
+        "codigo": "6ES7157-0AD82-0XA0",
+        "imagen": "6ES7157-0AD82-0XA0.webp",
+        "precioUnitario": 957,
+        "stock": 1
     }
 ]
