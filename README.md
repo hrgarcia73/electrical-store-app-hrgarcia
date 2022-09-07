@@ -15,3 +15,6 @@ Catálogo con MAPS y Promises
 
 Desafío 6:
 Detalle de producto
+
+Desafío 7:
+Primera Entrega del Proyecto Final
