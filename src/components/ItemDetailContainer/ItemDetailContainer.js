@@ -11,6 +11,9 @@ export default function ItemDetailContainer() {
     const [loading, setLoading] = useState(true);
     const cadena = "sin-imagen-disponible.jpg";
 
+
+  
+
     useEffect(() => {
       const getItem = async () => {
         try {

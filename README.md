@@ -18,3 +18,6 @@ Detalle de producto
 
 Desafío 7:
 Primera Entrega del Proyecto Final
+
+Desafío 8:
+Sincronizar counter
