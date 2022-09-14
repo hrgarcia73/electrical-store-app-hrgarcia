@@ -1,6 +1,15 @@
-.parrafo {
+.titulo {
     align-items: center;
     position: relative;
     top:100px;
     color: black;
+}
+
+.item-container{
+    position: relative;
+    top:200px;
+}
+
+.item-row{
+    
 }

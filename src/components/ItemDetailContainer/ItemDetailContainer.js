@@ -7,9 +7,8 @@ import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer() {
     const {id} = useParams();
-    const [product, setProduct] = useState(null);
+    const [item, setItem] = useState(null);
     const [loading, setLoading] = useState(true);
-    const cadena = "sin-imagen-disponible.jpg";
 
 
   
@@ -17,9 +16,9 @@ export default function ItemDetailContainer() {
     useEffect(() => {
       const getItem = async () => {
         try {
-          const item = await data.find(el => el.id === parseInt(id));
-          console.log('itemId: ' + id);
-          setProduct(item);
+          const product = await data.find(el => el.id === parseInt(id));
+          //console.log('itemId: ' + id);
+          setItem(product);
         } catch (error) {
           console.log(error);
         } finally {
@@ -35,12 +34,7 @@ export default function ItemDetailContainer() {
     return (
       <div className='item-detail-container'> 
          {loading ? <span>Loading...</span> :           
-            <ItemDetail             
-            codigo={product.codigo}
-            descripcion={product.descripcion}
-            precio= {product.precio} 
-            pictureUrl={require(`../../data/img/${cadena}`)}  
-            />
+            <ItemDetail item={item} />
           }
       </div>
       

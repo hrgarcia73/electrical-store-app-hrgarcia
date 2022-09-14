@@ -9,7 +9,7 @@
         "codigo": "3SU1001-0AB40-0AA0",
         "imagen": "3SU1001-0AB40-0AA0.webp",
         "precio": 13,
-        "stock": 36
+        "stock": 4
     },
     {
         "id": 2,
@@ -93,7 +93,7 @@
         "descripcion": "Fuente SITOP SMART, 340/550VAC / 24VDC, 20A",
         "codigo": "6EP1436-2BA10",
         "imagen": "6EP1436-2BA10.webp",
-        "precioUnitario": 450,
+        "precio": 450,
         "stock": 21
     },
     {
@@ -105,7 +105,7 @@
         "descripcion": "Fuente SITOP Modular, 3x400V-500VAC / 24VDC, 20A",
         "codigo": "6EP1436-3BA00",
         "imagen": "6EP1436-3BA00.webp",
-        "precioUnitario": 620,
+        "precio": 620,
         "stock": 21
     },
 
@@ -118,7 +118,7 @@
         "descripcion": "SITOP PSU300S 40A FUENTE ALIMENTACION ESTABILIZ. ENTRADA: 3 AC 400-500 V SALIDA: DC 24 V/40 A",
         "codigo": "6EP1437-2BA20",
         "imagen": "6EP1437-2BA20.webp",
-        "precioUnitario": 720,
+        "precio": 720,
         "stock": 21
     },
     {
@@ -130,7 +130,7 @@
         "descripcion": "Fuente SITOP Modular, 3x400V-500VAC / 24VDC, 40A",
         "codigo": "6EP1437-3BA00",
         "imagen": "6EP1437-3BA00.webp",
-        "precioUnitario": 940,
+        "precio": 940,
         "stock": 21
     },
     {
@@ -142,7 +142,7 @@
         "descripcion": "SITOP PSU8200 24V 40A FUENTE ALIMENTACION ESTABILIZ. ENTRADA: 3 AC 400-500 V SALIDA: DC 24 V/40 A",
         "codigo": "6EP1437-3BA10",
         "imagen": "6EP1437-3BA10.webp",
-        "precioUnitario": 690,
+        "precio": 690,
         "stock": 21
     },
 
@@ -155,7 +155,7 @@
         "descripcion": "Simotion Compact Flash Card D410-2",
         "codigo": "6AU1400-1PA23-0AA0",
         "imagen": "6AU1400-1PA23-0AA0.webp",
-        "precioUnitario": 461,
+        "precio": 461,
         "stock": 2
     },
     {
@@ -167,7 +167,7 @@
         "descripcion": "Simotion Compact Flash Card D4x5-2 ",
         "codigo": "6AU1400-2PA23-0AA0",
         "imagen": "6AU1400-2PA23-0AA0.webp",
-        "precioUnitario": 461,
+        "precio": 461,
         "stock": 6
     },
 
@@ -180,7 +180,7 @@
         "descripcion": "ACOPLADOR PROFIBUS DP/PA COUPLER (AMB EX)",
         "codigo": "6ES7157-0AD82-0XA0",
         "imagen": "6ES7157-0AD82-0XA0.webp",
-        "precioUnitario": 957,
+        "precio": 957,
         "stock": 1
     }
 ]
