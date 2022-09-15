@@ -26,24 +26,30 @@ export const CartProvider = ({children})=>{
     }
     const addItem = (item) =>{
         if(!isInCart(item.id)){
-            const newList = [...productCartList, item];
+            const newProduct ={...item, precioTotal:item.cantidad*item.precio}
+            const newList = [...productCartList, newProduct];
             setProductCartList(newList);
         }else{
-            const auxArray = [...productCartList]
-            const itemId = parseInt(item.id)
-            let product = auxArray.find(el => el.id === item.id)
-            product.cantidad = product.cantidad + item.cantidad
-            //console.log("el array auxiliar: ",auxArray)
-            let newArray = auxArray.filter(item => item.id !== itemId)
-            //console.log("el nuevo array sin el item: ",newArray)
-            const newList = [...newArray, product]
-            setProductCartList(newList);
-            console.log("la nueva lista con item modificado: ", newList)
+            const newList = [...productCartList];
+            const productIndex = productCartList.findIndex(el => el.id === parseInt(item.id));
+            newList[productIndex].cantidad = newList[productIndex].cantidad + item.cantidad;
+            newList[productIndex].precioTotal =   newList[productIndex].precio * newList[productIndex].cantidad;
         }
     }
 
+    const getTotalItems = () =>{
+        const totalItems= productCartList.reduce((acc,item)=> acc + item.cantidad, 0);
+        console.log("Total de items del carrito: ", totalItems);
+        return totalItems;
+    } 
+
+    const getPrecioTotal = () =>{
+        const precioTotal= productCartList.reduce((acc,item)=> acc + item.precioTotal, 0);
+        return precioTotal;
+    } 
+
     return(
-        <CartContext.Provider value={{productCartList, addItem, removeItem, clear}}>
+        <CartContext.Provider value={{productCartList, addItem, removeItem, clear, getTotalItems, getPrecioTotal}}>
             {children}
         </CartContext.Provider>
     )

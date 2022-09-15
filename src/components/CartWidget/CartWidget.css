@@ -5,9 +5,16 @@
     padding: 8px 20px;
     border-radius: 6px;
     cursor: pointer;
+    color: #fff;
 }
 
 .btn-cart:hover{
     background-color: #686876;
-    color: #fff;
+    
+}
+
+.cart-qty{
+    background-color:crimson;
+    border-radius: 50%;
+    
 }

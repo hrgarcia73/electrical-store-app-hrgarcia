@@ -1,29 +1,48 @@
 import './Cart.css';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 
 export const Cart = ()=> {
-    const {productCartList, removeItem, clear} = useContext(CartContext); 
-    console.log(productCartList.length)
+    const {productCartList, removeItem, clear, getPrecioTotal} = useContext(CartContext); 
     return (
         <div>
             <div className='titulo'>
                 <p>Componente Cart</p>
-                <button onClick={()=>{clear()}}>Vaciar carrito</button>
+                
+                {
+                productCartList.length>=1 ?
+                    <>
+                    {
+                    productCartList.map(item=>(
+                        <>
+                            <p>Descripción: {item.descripcion}</p>
+                            <p>Precio unitario: ${item.precio}</p>
+                            <p>Cantidad: {item.cantidad}</p>
+                            <p>Precio total: ${item.precioTotal}</p>
+                            <button onClick={()=>removeItem(item.id)}>Eliminar</button>
+                        </>    
+                    ))
+                    }   
+                    <br/> 
+                    <br/> 
+                    <p>Valor total de la compra: ${getPrecioTotal()}</p>
+                    <br/>  
+                    <br/> 
+                    <button onClick={()=>{clear()}}>Vaciar carrito</button>             
+                    </>
+                    :
+                    <div>
+                        <p>No hay productos en el carrito</p>
+                        <Link to='/'>
+                            <p>Buscar algo para comprar</p>
+                        </Link> 
+                    </div>
+
+            }
             </div>
 
-            {
-                productCartList.map(item=>(
-                    <div className='item-container'>
-                        <div className='item-row'>
-                            <p>{item.descripcion}</p>
-                            <p>{item.precio}</p>
-                            <p>{item.cantidad}</p>
-                            <button onClick={()=>removeItem(item.id)}>Eliminar</button>
-                        </div>
-                    </div>
-                ))
-            }
         </div>
     )
 }
+
