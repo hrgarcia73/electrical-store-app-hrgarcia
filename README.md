@@ -24,3 +24,6 @@ Sincronizar counter
 
 Desafío 9:
 CartContext
+
+Desafío 10:
+Cart View
