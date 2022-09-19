@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import './ItemListContainer.css';
 import { ItemList } from '../ItemList/ItemList';
-import data from '../../data/productos.json';
 import { useParams } from "react-router-dom";
+import {collection, getDocs} from 'firebase/firestore';
+import {db} from '../../utils/firebase';
 
 const ItemListContainer = () =>{
   const {categoria} = useParams();
@@ -14,11 +15,17 @@ const ItemListContainer = () =>{
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const response = await data;
+        //const response = await data;
+        //Creamos una referencia a la base de datos
+        const query = collection(db,"items");
+        const respuesta = await getDocs(query);
+        const docs = respuesta.docs;
+        const data = docs.map(doc=>{return{...doc.data(), id:doc.id}});
+        
         if (!categoria){
-          setProducts(response);
+          setProducts(data);
         } else{
-          const filtro = response.filter(item=>item.categoria === categoria);
+          const filtro = data.filter(item=>item.categoria === categoria);
           setProducts(filtro);
         }
           
@@ -28,10 +35,7 @@ const ItemListContainer = () =>{
         setLoading(false);
       }
     };
-    setTimeout( function() {
-      console.log('fin espera');
-      getProducts();
-    }, 3000);
+    getProducts();
   }, [categoria]);
 
   return (

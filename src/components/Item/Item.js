@@ -4,6 +4,7 @@ import './Item.css';
 
 export default function Item({ id, codigo, descripcion, precio, pictureUrl, stock }) {
   return (
+    
     <div className='item-card'>
         <h2 className='item-title'>{codigo}</h2>
         {<img src={pictureUrl} alt={codigo} />}

@@ -4,7 +4,7 @@ import './ItemList.css';
 import {Link} from 'react-router-dom';
 
 export const ItemList = ({items}) => {
-  const cadena = "sin-imagen-disponible.jpg";
+  //const cadena = "sin-imagen-disponible.jpg";
     return (
     <div className='item-list'> 
          {items.map(({id, codigo, precio, descripcion, categoria, imagen, stock}) => (            
@@ -14,7 +14,7 @@ export const ItemList = ({items}) => {
                 codigo={codigo}
                 descripcion={descripcion}
                 precio= {precio} 
-                pictureUrl={require(`../../data/img/${cadena}`)}  
+                pictureUrl={imagen}  //require(`../../data/img/${cadena}`)
                 stock = {stock}
                 key={id}
                 />  
