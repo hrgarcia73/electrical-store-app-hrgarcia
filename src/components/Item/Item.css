@@ -1,5 +1,5 @@
 .item-card {
-    max-width: 30%;
+    width: 30%;
     min-height: 300px;
     padding: 10px;
     border-radius: 15px;
@@ -7,7 +7,10 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     color: black; 
   }
-
+  .item-card a{
+    text-decoration: none;
+    color: black; 
+}
   .item-card img{
     width: 30%;
   }

@@ -19,7 +19,8 @@ export default function ItemDetail({item}) {
         <h2>Detalle de producto {item.codigo}</h2>
           {<img src={item.imagen} alt={item.codigo} />}
           <p className='item-detail-description'><strong>Descripcion: </strong> {item.descripcion}</p>
-          <p className='item-detail-price'><strong>Precio: </strong>${item.precio}</p>   
+          <p className='item-detail-price'><strong>Precio: </strong>${item.precio}</p> 
+          <p className='item-datail-stock'><strong>Stock: </strong>${item.stock}</p>  
           <ItemCount 
             stock={item.stock} 
             initial={1} 

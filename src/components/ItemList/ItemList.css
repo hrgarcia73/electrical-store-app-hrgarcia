@@ -7,8 +7,3 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.item-list a{
-    text-decoration: none;
-    max-width: 60rem;
-}

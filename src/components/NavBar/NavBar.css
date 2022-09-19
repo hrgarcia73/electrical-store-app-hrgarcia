@@ -34,6 +34,7 @@
     font-size: 1.4rem;
     color: #333333;
     padding: 8px 20px;
+    margin: 5px;
     border-radius: 6px;
     transition: 0.5s;
 }

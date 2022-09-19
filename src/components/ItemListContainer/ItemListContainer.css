@@ -1,6 +1,10 @@
 .list{
     align-items: center;
     position: relative;
-    top:100px;
+    top:60px;
     color: black;
+}
+.list .titulo{
+    top: 15px;
+    text-align: center;
 }
