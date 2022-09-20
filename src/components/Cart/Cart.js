@@ -7,23 +7,41 @@ export const Cart = ()=> {
     const {productCartList, removeItem, clear, getPrecioTotal} = useContext(CartContext); 
     return (
         <div>
-            <div className='titulo'>
-                <p>Componente Cart</p>
+            <div className='cart-container'>
+                <h3>Contenido del carito</h3>
                 
                 {
                 productCartList.length>=1 ?
                     <>
-                    {
-                    productCartList.map(item=>(
-                        <>
-                            <p>Descripción: {item.descripcion}</p>
-                            <p>Precio unitario: ${item.precio}</p>
-                            <p>Cantidad: {item.cantidad}</p>
-                            <p>Precio total: ${item.precioTotal}</p>
-                            <button onClick={()=>removeItem(item.id)}>Eliminar</button>
-                        </>    
-                    ))
-                    }   
+                    <table className='table-fill'>
+                        <thead>
+                            <tr>
+                                <th className='table-left'>Imagen</th>
+                                <th className='table-left'>Descripción</th>
+                                <th className='table-left'>Precio unitario</th>
+                                <th className='table-left'>Catidad</th>
+                                <th className='table-left'>Precio total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {
+                        productCartList.map(item=>(
+                            <>
+                                <tr>
+                                    <td className='text-left'><img src={item.imagen} alt={item.codigo} />
+                                        <button onClick={()=>removeItem(item.id)}>Eliminar</button>
+                                    </td>
+                                    <td className='text-left'>{item.descripcion}</td>
+                                    <td className='text-left'>${item.precio}</td>
+                                    <td className='text-left'>{item.cantidad}</td>
+                                    <td className='text-left'>${item.precioTotal}</td>
+                                </tr>
+                                                 
+                            </>    
+                        ))
+                        }  
+                        </tbody>
+                    </table> 
                     <br/> 
                     <br/> 
                     <p>Valor total de la compra: ${getPrecioTotal()}</p>

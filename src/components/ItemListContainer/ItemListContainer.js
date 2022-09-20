@@ -22,7 +22,7 @@ const ItemListContainer = () =>{
           const data = docs.map(doc=>{return{...doc.data(), id:doc.id}});
           setProducts(data);
         } else{
-          //const filtro = data.filter(item=>item.categoria === categoria);
+          //filtro de la coleccion para obterer solo las categorias
           const database = getFirestore();
           const filtro = query(collection(database,"items"), where("categoria", "==", categoria));
           const snapshot = await getDocs(filtro);

@@ -31,7 +31,7 @@ export const CartProvider = ({children})=>{
             setProductCartList(newList);
         }else{
             const newList = [...productCartList];
-            const productIndex = productCartList.findIndex(el => el.id === parseInt(item.id));
+            const productIndex = productCartList.findIndex(el => el.id === item.id);
             newList[productIndex].cantidad = newList[productIndex].cantidad + item.cantidad;
             newList[productIndex].precioTotal =   newList[productIndex].precio * newList[productIndex].cantidad;
         }
