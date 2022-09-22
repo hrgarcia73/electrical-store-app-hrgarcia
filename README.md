@@ -30,3 +30,6 @@ Cart View
 
 Desafío 11:
 Item Collection
+
+Desafío 12:
+Item Collection II

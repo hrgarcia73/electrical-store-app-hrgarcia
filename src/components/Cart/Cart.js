@@ -1,10 +1,37 @@
 import './Cart.css';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
+import { db } from '../../utils/firebase';
+
+import {collection, addDoc, doc, updateDoc} from "firebase/firestore";
 
 export const Cart = ()=> {
     const {productCartList, removeItem, clear, getPrecioTotal} = useContext(CartContext); 
+    const [idOrder, setIdOrder] = useState("");
+    let today = new Date();
+
+    const sendOrder = (e) => {
+      e.preventDefault();
+        const order = {
+          buyer: {
+            name:e.target[0].value,
+            phone:e.target[1].value,
+            email:e.target[2].value  
+          },
+          items: productCartList,
+          date: today.toLocaleString(),
+          total: getPrecioTotal()
+      }
+      const orderCollection = collection(db,"orders");
+      addDoc(orderCollection, order).then(({id}) => {
+        setIdOrder(id);
+        alert("La orden ha sido creada con exito, \n el número de orden es: " + id);
+        clear();
+
+    }); 
+    }
+
     return (
         <div>
             <div className='cart-container'>
@@ -47,7 +74,14 @@ export const Cart = ()=> {
                     <p>Valor total de la compra: ${getPrecioTotal()}</p>
                     <br/>  
                     <br/> 
-                    <button onClick={()=>{clear()}}>Vaciar carrito</button>             
+                    <button onClick={()=>{clear()}}>Vaciar carrito</button>      
+
+                      <form onSubmit={sendOrder}>
+                        <input type="text" placeholder='nombre'/>
+                        <input type="text" placeholder='telefono'/>
+                        <input type="email" placeholder='email'/>
+                        <button type='submit'>enviar orden</button>
+                      </form>      
                     </>
                     :
                     <div>
