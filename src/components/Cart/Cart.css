@@ -24,22 +24,22 @@
     background: white;
     border-radius: 3px;
     border-collapse: collapse;
-    height: 320px;
-    margin: auto;
+    height: 100px;
+    margin: 10px;
     max-width: 1200px;
     padding: 5px;
-    width: 100%;
+    width: 60%;
     box-shadow: 0 5px 10px rgba(0, 0,0, 0.1);
     animation: float 5s infinite;
 }
 
 th{
     color: #d5dde5;
-    background-color: #1b1e24;
-    border-bottom: 4px solid #9ea7af;
-    font-size: 23px;
+    background-color:  #333333;
+    border-bottom: 4px solid #f58634;
+    font-size: 16px;
     font-weight: 100;
-    padding: 24px;
+    padding: 10px;
     text-align: left;
     text-shadow: 0 1px 1px rgba(0,0,0,0.1);
     vertical-align: middle;
@@ -55,10 +55,11 @@ th:last-child{
 }
 
 tr{
+    
     border-top: 1px solid #c1c3d1;
     border-bottom: 1px solid #c1c3d1;
     color: #666b85;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: normal;
     text-shadow: 0 1px 1px rgba(256, 256,256, 0.1) ;
 }
@@ -94,17 +95,30 @@ tr:last-child td:last-child{
 }
 
 td{
+    color: black;
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     vertical-align: middle;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 14px;
     text-shadow: -1px -1px 1px rgba(0, 0,0, 0.1);
     border-right: 1px solid #c1c3d1;
 }
 
+.table-label-image{
+    width: 20%;
+}
+
+.table-label-price{
+    width: 10%;
+}
+
+.table-label-count{
+    width: 10%;
+}
+
 .table-fill img{
-    width: 30%;
+    width: 20%;
       
 }

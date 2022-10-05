@@ -43,11 +43,11 @@ export const Cart = ()=> {
                     <table className='table-fill'>
                         <thead>
                             <tr>
-                                <th className='table-left'>Imagen</th>
-                                <th className='table-left'>Descripción</th>
-                                <th className='table-left'>Precio unitario</th>
-                                <th className='table-left'>Catidad</th>
-                                <th className='table-left'>Precio total</th>
+                                <th className='table-header table-label-image'>Imagen</th>
+                                <th className='table-header table-label-description'>Descripción</th>
+                                <th className='table-header table-label-price'>Precio unitario</th>
+                                <th className='table-header table-label-count'>Catidad</th>
+                                <th className='table-header table-label-totalprice'>Precio total</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -55,13 +55,13 @@ export const Cart = ()=> {
                         productCartList.map(item=>(
                             <>
                                 <tr>
-                                    <td className='text-left'><img src={item.imagen} alt={item.codigo} />
+                                    <td className='table-label-image'><img src={item.imagen} alt={item.codigo} /></td>
+                                    <td className='table-label-description'>{item.descripcion}</td>
+                                    <td className='table-label-price'>${item.precio}</td>
+                                    <td className='table-label-count'>{item.cantidad}</td>
+                                    <td className='table-label-totalprice'>${item.precioTotal}
                                         <button onClick={()=>removeItem(item.id)}>Eliminar</button>
                                     </td>
-                                    <td className='text-left'>{item.descripcion}</td>
-                                    <td className='text-left'>${item.precio}</td>
-                                    <td className='text-left'>{item.cantidad}</td>
-                                    <td className='text-left'>${item.precioTotal}</td>
                                 </tr>
                                                  
                             </>    
