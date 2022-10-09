@@ -1,0 +1,20 @@
+.cart-container-main {
+    width: 100%;
+    align-items: center;
+    position: relative;
+    top:60px;
+    color: black;
+    font-family: 'roboto', sans-serif;
+}
+.cart-container-main h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.cart-container{
+    width: 100%;
+    display: flex;
+} 
