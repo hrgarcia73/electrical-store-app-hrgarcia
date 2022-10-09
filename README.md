@@ -1,35 +1,6 @@
-Desafío 1:
-Creando la App utilizando el CLI
+Entrega final:
 
-Desafío 2:
-Menú e-commerce
+- Utilizo react-hook-form para el control y la validación del formulario.
+- Al componente form le di la responsabilidad de validar los datos del cliente y de enviar la orden. Esto lo hice aprovechando que todos los datos están en el context y con ello evito pasar funciones por parámetro entre componentes. Con lo único que no estoy convencido es que, dentro del formulario necesito verificar si el carrito tiene items para mostrarlo o no, pero los datos están en el context y no resulta complicado. Otra solución podría haber sido llamar al formulario desde el componente cart y ubicarlo en el sitio donde estaba el formulario usado en los desafíos.
 
-Desafío 3:
-Creá tu landing. CartWidget, ItemListContainer
 
-Desafío 4:
-Contador con botón
-
-Desafío 5:
-Catálogo con MAPS y Promises
-
-Desafío 6:
-Detalle de producto
-
-Desafío 7:
-Primera Entrega del Proyecto Final
-
-Desafío 8:
-Sincronizar counter
-
-Desafío 9:
-CartContext
-
-Desafío 10:
-Cart View
-
-Desafío 11:
-Item Collection
-
-Desafío 12:
-Item Collection II
