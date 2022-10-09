@@ -15,7 +15,6 @@ export default function ItemDetailContainer() {
     useEffect(() => {
       const getItem = async () => {
         try {
-          //const product = await data.find(el => el.id === parseInt(id));
           const query = doc(db, "items",id);
           const respuesta = await getDoc(query);
           const product = {...respuesta.data(), id:respuesta.id};
