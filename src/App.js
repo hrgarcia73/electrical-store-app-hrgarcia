@@ -4,7 +4,6 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartContainer } from './components/CartContainer/CartContainer';
-import { Cart } from './components/Cart/Cart';
 import { CartProvider } from './context/CartContext';
 import { PaginaFirebase } from './components/PaginaFirebase/PaginaFirebase'
 

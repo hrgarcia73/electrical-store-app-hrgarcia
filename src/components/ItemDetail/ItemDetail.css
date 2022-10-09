@@ -16,3 +16,41 @@
     font-size:1rem;
     font-weight: bold;
   }
+
+  .btn-finalizar-compra{
+    width: 45%;
+    height: 30px;
+    border-radius: 2px;
+    margin: 30px 5% 0 5px ;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background: #f58634;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-finalizar-compra:hover{
+    background: #d7d7db;
+    color: #f58634;
+}
+
+.btn-seguir-comprando{
+  width: 45%;
+  height: 30px;
+  border-radius: 2px;
+  margin: 30px 3px 0 0 ;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  background: #ebebeb;
+  color: #63636b;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-seguir-comprando:hover{
+  background: #d7d7db;
+  color: #63636b;
+}

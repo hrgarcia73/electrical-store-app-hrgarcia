@@ -16,7 +16,7 @@
     justify-content: center;
     height: 30px;
     background-color: white;
-    border: 2px solid lightgray;
+    border: 2px solid #f58634;
     border-radius: 5px;
     width: 200px;
     margin: 10px 15px;
@@ -25,22 +25,22 @@
 
 .itemcount h3{
     width: 150px;
-    color: lightseagreen;
+    color: #63636b;
 }
 
 .itemcount button{
     border: none;
     border-radius: 3px;
     background-color: white;
-    color: lightseagreen;
+    color: #63636b;
     font-family: "Mohave", sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
 }
 
 .itemcount button:hover{
-    background-color: lightseagreen;
+    background-color: #f58634;
     color: white;
     
 }
@@ -48,10 +48,10 @@
 .btn-agregar{
     width: 200px;
     height: 40px;
-    border: 2px solid lightseagreen;
+    border: 2px solid #f58634;
     border-radius: 5px;
     background-color: white;
-    color: lightseagreen;
+    color: #f58634;
     font-family: "Mohave", sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -59,6 +59,6 @@
 }
 
 .btn-agregar:hover{
-    background-color: lightseagreen;
+    background-color: #f58634;
     color: white;
 }

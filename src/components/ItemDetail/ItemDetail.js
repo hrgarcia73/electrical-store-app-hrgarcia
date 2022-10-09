@@ -32,7 +32,7 @@ export default function ItemDetail({item}) {
                 <button className='btn-finalizar-compra'>Finalizar mi compra</button>
               </Link> 
               <Link to='/'>
-                <button className='btn-finalizar-seguir'>Seguir comprando</button>
+                <button className='btn-seguir-comprando'>Seguir comprando</button>
               </Link> 
             </div>
             : ""}      

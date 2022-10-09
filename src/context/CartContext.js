@@ -39,7 +39,6 @@ export const CartProvider = ({children})=>{
 
     const getTotalItems = () =>{
         const totalItems= productCartList.reduce((acc,item)=> acc + item.cantidad, 0);
-        console.log("Total de items del carrito: ", totalItems);
         return totalItems;
     } 
 

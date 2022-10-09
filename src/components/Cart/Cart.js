@@ -34,18 +34,20 @@ export const Cart = ()=> {
                         ))
                         } 
 
-                    <br/> 
-                    <br/> 
-                    <br/>  
-                    <br/> 
-                    <button onClick={()=>{clear()}}>Vaciar carrito</button>      
+                        <div className='btn-container'>
+                            <button className='btn-vaciar-carrito' onClick={()=>{clear()}}>Vaciar carrito</button>
+                            <Link className='link-btn-seguir-comprando' to='/'>
+                                <button className='btn-seguir-comprando'>Seguir comprando</button>
+                            </Link> 
+                        </div>
+                          
 
                     </>
                     :
-                    <div>
-                        <p>No hay productos en el carrito</p>
-                        <Link to='/'>
-                            <p>Buscar algo para comprar</p>
+                    <div className='empty-cart-container'>
+                        <p>No hay productos en el carrito :(</p>
+                        <Link className='link-btn-seguir-comprando' to='/'>
+                                <button className='btn-seguir-comprando'>Buscar algo para comprar</button>
                         </Link> 
                     </div>
 
